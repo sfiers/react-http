@@ -1,0 +1,4 @@
+Install Packages
+
+    npm install axios
+    => see if it's included in the list of dependencies in package.json
