@@ -2,3 +2,8 @@ Install Packages
 
     npm install axios
     => see if it's included in the list of dependencies in package.json
+
+useState with object
+
+    ...name, firstName: e.target.value
+    => read as: copy everypropery in the name object and overwrite and update the firstName property to the new value.
