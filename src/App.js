@@ -24,35 +24,37 @@ import PostList from './components/PostList';
 import CompA from './components/CompA';
 import CompB from './components/CompB';
 import CompC from './components/CompC';
+import DataFetchingOne from './components/DataFetchingOne';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
 export const CountContext = React.createContext()
 
-const initialState = 0
-const reducer = (state, action) => {
-    switch(action) {
-        case 'increment':
-            return state + 1
-        case 'decrement':
-            return state - 1
-        case 'reset':
-            return initialState
-        default:
-            return state
-    }
-}
+// const initialState = 0
+// const reducer = (state, action) => {
+//     switch(action) {
+//         case 'increment':
+//             return state + 1
+//         case 'decrement':
+//             return state - 1
+//         case 'reset':
+//             return initialState
+//         default:
+//             return state
+//     }
+// }
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState)
+  // const [count, dispatch] = useReducer(reducer, initialState)
 
   return (
-    <CountContext.Provider value ={{ countState: count, countDispatch: dispatch}}>
+    // <CountContext.Provider value ={{ countState: count, countDispatch: dispatch}}>
       <div className="App">
-        <CompA />
+        <DataFetchingOne />
+        {/* <CompA />
         <CompB />
-        <CompC />
+        <CompC /> */}
         {/* <CounterThree />   */}
         {/* <CounterTwo /> */}
         {/* <CounterOne /> */}
@@ -77,7 +79,7 @@ function App() {
         {/* <PostForm /> */}
         {/* <PostList /> */}
       </div>
-    </CountContext.Provider>
+    // </CountContext.Provider>
   );
 }
 
