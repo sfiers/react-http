@@ -6,6 +6,7 @@ import ClassCounter from './components/ClassCounter';
 import ClassCounterOne from './components/ClassCounterOne';
 import ClassMouse from './components/ClassMouse';
 import ComponentC from './components/ComponentC';
+import CounterOne from './components/CounterOne';
 import DataFetching from './components/DataFetching';
 import HookCounter from './components/HookCounter';
 import HookCounterFour from './components/HookCounterFour';
@@ -25,11 +26,12 @@ export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
-      <UserContext.Provider value={'Simon'}>
+      <CounterOne />
+      {/* <UserContext.Provider value={'Simon'}>
         <ChannelContext.Provider value={'codevolution'}>
           <ComponentC />
         </ChannelContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
       {/* <DataFetching /> */}
       {/* <IntervalHookCounter /> */}
       {/* <IntervalClassCounter /> */}
