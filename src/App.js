@@ -9,13 +9,15 @@ import HookCounterOne from './components/HookCounterOne';
 import HookCounterThree from './components/HookCounterThree';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookMouse from './components/HookMouse';
+import MouseContainer from './components/MouseContainer';
 import PostForm from './components/PostForm';
 import PostList from './components/PostList';
 
 function App() {
   return (
     <div className="App">
-      <HookMouse />
+      <MouseContainer />
+      {/* <HookMouse /> */}
       {/* <ClassMouse /> */}
       {/* <HookCounterOne /> */}
       {/* <ClassCounterOne /> */}
