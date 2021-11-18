@@ -9,6 +9,8 @@ import HookCounterOne from './components/HookCounterOne';
 import HookCounterThree from './components/HookCounterThree';
 import HookCounterTwo from './components/HookCounterTwo';
 import HookMouse from './components/HookMouse';
+import IntervalClassCounter from './components/IntervalClassCounter';
+import IntervalHookCounter from './components/IntervalHookCounter';
 import MouseContainer from './components/MouseContainer';
 import PostForm from './components/PostForm';
 import PostList from './components/PostList';
@@ -16,7 +18,9 @@ import PostList from './components/PostList';
 function App() {
   return (
     <div className="App">
-      <MouseContainer />
+      <IntervalHookCounter />
+      <IntervalClassCounter />
+      {/* <MouseContainer /> */}
       {/* <HookMouse /> */}
       {/* <ClassMouse /> */}
       {/* <HookCounterOne /> */}
