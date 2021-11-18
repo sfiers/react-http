@@ -1,8 +1,11 @@
 // import logo from './logo.svg';
+import React from 'react';
+import { Component } from 'react';
 import './App.css';
 import ClassCounter from './components/ClassCounter';
 import ClassCounterOne from './components/ClassCounterOne';
 import ClassMouse from './components/ClassMouse';
+import ComponentC from './components/ComponentC';
 import DataFetching from './components/DataFetching';
 import HookCounter from './components/HookCounter';
 import HookCounterFour from './components/HookCounterFour';
@@ -16,10 +19,18 @@ import MouseContainer from './components/MouseContainer';
 import PostForm from './components/PostForm';
 import PostList from './components/PostList';
 
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
+
 function App() {
   return (
     <div className="App">
-      <DataFetching />
+      <UserContext.Provider value={'Simon'}>
+        <ChannelContext.Provider value={'codevolution'}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+      {/* <DataFetching /> */}
       {/* <IntervalHookCounter /> */}
       {/* <IntervalClassCounter /> */}
       {/* <MouseContainer /> */}
