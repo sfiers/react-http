@@ -29,6 +29,8 @@ import DataFetchingTwo from './components/DataFetchingTwo';
 import ParentComponent from './components/ParentComponent';
 import Counter from './components/Counter';
 import FocusInput from './components/FocusInput';
+import ClassTimer from './components/ClassTimer';
+import HookTimer from './components/HookTimer';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -55,7 +57,9 @@ function App() {
   return (
     // <CountContext.Provider value ={{ countState: count, countDispatch: dispatch}}>
       <div className="App">
-        <FocusInput />
+        <ClassTimer />
+        <HookTimer />
+        {/* <FocusInput /> */}
         {/* <Counter /> */}
         {/* <ParentComponent /> */}
         {/* <DataFetchingTwo /> */}
