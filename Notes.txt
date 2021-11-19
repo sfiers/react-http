@@ -6,4 +6,10 @@ Install Packages
 useState with object
 
     ...name, firstName: e.target.value
-    => read as: copy everypropery in the name object and overwrite and update the firstName property to the new value.
+    => read as: copy everypropery in the name object and overwrite and update the firstName property to the new value. 
+
+25 useState vs useReducer
+
+    type of state: Number, String, Boolean vs Object or Array
+    Number of state transitions: One or Two vs Too many
+    Local vs Global: Local vs Global
