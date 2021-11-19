@@ -35,6 +35,7 @@ import DocTitleOne from './components/DocTitleOne';
 import DocTitleTwo from './components/DocTitleTwo';
 import CountrOne from './components/CountrOne';
 import CountrTwo from './components/CountrTwo';
+import UserForm from './components/UserForm';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
@@ -61,8 +62,9 @@ function App() {
   return (
     // <CountContext.Provider value ={{ countState: count, countDispatch: dispatch}}>
       <div className="App">
-        <CountrOne />
-        <CountrTwo />
+        <UserForm />
+        {/* <CountrOne />
+        <CountrTwo /> */}
         {/* <DocTitleOne />
         <DocTitleTwo /> */}
         {/* <ClassTimer />
